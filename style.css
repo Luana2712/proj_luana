@@ -4,13 +4,13 @@
     /*cor do fundo*/
     --cor-principal: #0B0D20;
     /*cores da caixa principal*/
-    --cor-secundaria: #212333;
+    --cor-secundaria: #020b4e;
     /*cores da caixa secundaria*/
-    --cor-destaque: #2BDEFD;
+    --cor-destaque: #72cbff;
     /*cor texto quest/Buttom*/
     --cor-texto: #fafafa;
     /*cor do texto pergunta*/
-    --cor-fadeButtom: #e30d6d;
+    --cor-fadeButtom: #fa52ae;
     /*cor fadebuttom*/
 }
 
@@ -33,7 +33,7 @@ body {
     max-width: 500px;
     text-align: center;
     padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(20, 20, 20, 0.2);
     border-radius: 8px;
 }
 
