@@ -1,4 +1,28 @@
-rama tem um Mafioso Italiano como personagem principal?",
+onst caixaPrincipal = document.querySelector(".caixa-principal");
+const caixaPerguntas = document.querySelector(".caixa-perguntas");
+const caixaAlternativas = document.querySelector(".caixa-alternativas");
+const caixaResultado = document.querySelector(".caixa-resultado");
+const textoResultado = document.querySelector(".texto-resultado");
+
+const perguntas ={ [
+    {
+        enunciado: "Em Tvd (The Vampire Diares) qual foi o ano que os irmãos Salvatores viram vampiros?",
+        alternativas: [
+            "1864",
+            "1570"
+        ],
+        correta: 0 // A primeira alternativa é a correta
+    },
+    {
+        enunciado: "Em Grey's Anatomy qual foi a cor do post it que meredith e dereck casaram?",
+        alternativas: [
+            "Amarelo",
+            "Azul"
+        ],
+        correta: 1 // A segunda alternativa é a correta
+    },
+    {
+        enunciado: "Qual dorama tem um Mafioso Italiano como personagem principal?",
         alternativas: [
             "Vincenzo",
             "My sweet mobster"
@@ -6,8 +30,6 @@ rama tem um Mafioso Italiano como personagem principal?",
         correta: 0 // A primeira alternativa é a correta
     }
 ];
-
-let atual = 0;const caixaPrincipal = document.querySelector(".caixa-principal");
 …    {
         enunciado: "Em Harry Potter quem eram os marotos, e qual eram os seus apelidos? ",
         alternativas: [
@@ -17,7 +39,15 @@ let atual = 0;const caixaPrincipal = document.querySelector(".caixa-principal");
         correta:1 // A Segunda alternativa é a correta
     },
     {
-        enunciado: "Qual do
+        enunciado: "Em É assim que Acaba com quem lily fica no final da doulogia? ",
+        alternativas: [
+            "Ryle"
+            "Atlas"
+        ],
+        correta:1 // A Segunda alternativa é a correta
+    },
+    }
+    let atual = 0;const caixaPrincipal = document.querySelector(".caixa-principal");
 let perguntaAtual;
 let pontuacao = 0; // Inicie a pontuação em 0
 
