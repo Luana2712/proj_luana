@@ -6,7 +6,7 @@ const textoResultado = document.querySelector(".texto-resultado");
 
 const perguntas = [
     {
-        enunciado: "E qual ano os irmãos Salvatore viraram vampiros ?",
+        enunciado: "Em TVD (The Vampire Diares) qual ano os irmãos Salvatore viraram vampiros ?",
         alternativas: [
             "1864",
             "1760"
