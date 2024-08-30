@@ -1,44 +1,4 @@
-const caixaPrincipal = document.querySelector(".caixa-principal");
-const caixaPerguntas = document.querySelector(".caixa-perguntas");
-const caixaAlternativas = document.querySelector(".caixa-alternativas");
-const caixaResultado = document.querySelector(".caixa-resultado");
-const textoResultado = document.querySelector(".texto-resultado");
-
-const perguntas = [
-    {
-        enunciado: "Em TVD (The Vampire Diares) qual ano os irmãos Salvatore viraram vampiros ?",
-        alternativas: [
-            "1864",
-            "1760"
-        ],
-        correta: 0 // A primeira alternativa é a correta
-    },
-    {
-        enunciado: "Com quem a lily fica no final da duologia de É assim que acaba?",
-        alternativas: [
-            "Ryle",
-            "Atlas"
-        ],
-        correta: 1 // A Segunda alternativa é a correta
-    },
-    {
-        enunciado: "Em Grey's Anatomy na sétima temporada, dois dos médicos do Hospital, sofre um acidente de carro, qual foram os dois médicos? E qual deles fica entre a vida e morte??",
-        alternativas: [
-            "Derek Shepherd e Meredith Grey. Meredith Grey",
-            "Callie Torres e Arizona Robbins. Callie Torres."
-        ],
-        correta: 1 // A Segunda alternativa é a correta
-    },
-    {
-        enunciado: "Em Harry Potter quem eram os marotos, e qual eram os seus apelidos? ",
-        alternativas: [
-            "Severo Snape(cobrinha), Pedro Pettigrew(ratinho), Líli Potter (almofadinha) e Tiago Potter(aluado).",
-            "Remo Lupin(aluado), Pedro Pettigrew(rabicho), Tiago Potter(pontas) e Sirius Black(almofadinha)."
-        ],
-        correta:1 // A Segunda alternativa é a correta
-    },
-    {
-        enunciado: "Qual dorama tem um Mafioso Italiano como personagem principal?",
+rama tem um Mafioso Italiano como personagem principal?",
         alternativas: [
             "Vincenzo",
             "My sweet mobster"
@@ -47,7 +7,17 @@ const perguntas = [
     }
 ];
 
-let atual = 0;
+let atual = 0;const caixaPrincipal = document.querySelector(".caixa-principal");
+…    {
+        enunciado: "Em Harry Potter quem eram os marotos, e qual eram os seus apelidos? ",
+        alternativas: [
+            "Severo Snape(cobrinha), Pedro Pettigrew(ratinho), Líli Potter (almofadinha) e Tiago Potter(aluado).",
+            "Remo Lupin(aluado), Pedro Pettigrew(rabicho), Tiago Potter(pontas) e Sirius Black(almofadinha)."
+        ],
+        correta:1 // A Segunda alternativa é a correta
+    },
+    {
+        enunciado: "Qual do
 let perguntaAtual;
 let pontuacao = 0; // Inicie a pontuação em 0
 
