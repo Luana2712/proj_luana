@@ -1,11 +1,11 @@
 /* DEFININÇÃO DAS VARIAVEIS CSS PARA CORES*/
 :root {
-    --cor-fundo: #064070;
-    --cor-principal: #0b0d20;
-    --cor-secundaria: #212333;
-    --cor-destaque: #e22b2b;
-    --cor-texto: #15dc51;
-    --cor-fadeButtom: #e29716;
+--cor-fundo: #001d35;
+--cor-principal: #001aff;
+--cor-secundaria: #448fff;
+--cor-destaque: #90ccfd;
+--cor-texto: #958ef8;
+--cor-fadeButtom: #5557ff;
 }
 
 /*CONFIGURAÇÃO DO ESTILO DO CORPO DA PAGINA*/
@@ -84,4 +84,3 @@ button:hover {
     height: 100%;
     object-fit: cover;
     z-index: -1;
-}
