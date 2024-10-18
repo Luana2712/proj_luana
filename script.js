@@ -6,7 +6,7 @@ const textoResultado = document.querySelector(".texto-resultado");
 
 const perguntas = [
     {
-        enunciado: "Em Tvd (The Vampire Diaries) qual foi o ano que os irmãos Salvatores viram vampiros?",
+        enunciado: "Em Tvd (The Vampire Diaries) qual foi o ano que os irmãos Salvatore viram vampiros?",
         alternativas: ["1864", "1570"],
         correta: 0 // A primeira alternativa é a correta
     },
