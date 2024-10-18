@@ -1,10 +1,10 @@
 /* DEFINIÇÃO DAS VARIÁVEIS CSS PARA CORES */
 :root {
     --cor-fundo: #001d35;
-    --cor-principal: #f8f8f8;
+    --cor-principal: #0011ff;
     --cor-secundaria: #448fff;
     --cor-destaque: #b783e7;
-    --cor-texto: #08007e;
+    --cor-texto: #ffffff;
     --cor-fadeButtom: #5557ff;
 }
 
