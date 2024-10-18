@@ -5,20 +5,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>>Você sabe isso?</title> <!-- texto do cabeçalho -->
+    <title>Você sabe isso?</title> <!-- Título da página -->
 </head>
-<!-- corpo da caixa -->
 
 <body>
     <div class="caixa-principal">
-    
-        <h1>Você sabe isso?</h1> <!--texto do Questionário caixa -->
-        <div class="caixa-perguntas"></div>
-        <div class="caixa-alternativas"></div>
+        <h1>Você sabe isso?</h1> <!-- Título do questionário -->
+
+        <!-- Caixa para exibir perguntas -->
+        <div class="caixa-perguntas">
+            <!-- Exemplo de pergunta -->
+            <p>Qual é a capital do Brasil?</p>
+        </div>
+
+        <!-- Caixa para exibir alternativas -->
+        <div class="caixa-alternativas">
+            <!-- Exemplo de alternativas -->
+            <label>
+                <input type="radio" name="pergunta1" value="1"> São Paulo
+            </label><br>
+            <label>
+                <input type="radio" name="pergunta1" value="2"> Brasília
+            </label><br>
+            <label>
+                <input type="radio" name="pergunta1" value="3"> Rio de Janeiro
+            </label><br>
+        </div>
     </div>
+
+    <!-- Caixa para exibir o resultado -->
     <div class="caixa-resultado">
         <p class="texto-resultado"></p>
     </div>
+
+    <!-- Referência ao arquivo JavaScript -->
     <script src="script.js"></script>
 </body>
 

@@ -4,50 +4,38 @@ const caixaAlternativas = document.querySelector(".caixa-alternativas");
 const caixaResultado = document.querySelector(".caixa-resultado");
 const textoResultado = document.querySelector(".texto-resultado");
 
-const perguntas ={ [
+const perguntas = [
     {
-        enunciado: "Em Tvd (The Vampire Diares) qual foi o ano que os irmãos Salvatores viram vampiros?",
-        alternativas: [
-            "1864",
-            "1570"
-        ],
+        enunciado: "Em Tvd (The Vampire Diaries) qual foi o ano que os irmãos Salvatores viram vampiros?",
+        alternativas: ["1864", "1570"],
         correta: 0 // A primeira alternativa é a correta
     },
     {
-        enunciado: "Em Grey's Anatomy qual foi a cor do post it que meredith e dereck casaram?",
-        alternativas: [
-            "Amarelo",
-            "Azul"
-        ],
+        enunciado: "Em Grey's Anatomy qual foi a cor do post it que Meredith e Derek casaram?",
+        alternativas: ["Amarelo", "Azul"],
         correta: 1 // A segunda alternativa é a correta
     },
     {
         enunciado: "Qual dorama tem um Mafioso Italiano como personagem principal?",
-        alternativas: [
-            "Vincenzo",
-            "My sweet mobster"
-        ],
+        alternativas: ["Vincenzo", "My sweet mobster"],
         correta: 0 // A primeira alternativa é a correta
-    }
-];
-…    {
-        enunciado: "Em Harry Potter quem eram os marotos, e qual eram os seus apelidos? ",
-        alternativas: [
-            "Severo Snape(cobrinha), Pedro Pettigrew(ratinho), Líli Potter (almofadinha) e Tiago Potter(aluado).",
-            "Remo Lupin(aluado), Pedro Pettigrew(rabicho), Tiago Potter(pontas) e Sirius Black(almofadinha)."
-        ],
-        correta:1 // A Segunda alternativa é a correta
     },
     {
-        enunciado: "Em É assim que Acaba com quem lily fica no final da doulogia? ",
+        enunciado: "Em Harry Potter quem eram os marotos, e quais eram os seus apelidos?",
         alternativas: [
-            "Ryle"
-            "Atlas"
+            "Severo Snape(cobrinha), Pedro Pettigrew(ratinho), Líli Potter(almofadinha) e Tiago Potter(aluado).",
+            "Remo Lupin(aluado), Pedro Pettigrew(rabicho), Tiago Potter(pontas) e Sirius Black(almofadinha)."
         ],
-        correta:1 // A Segunda alternativa é a correta
+        correta: 1 // A segunda alternativa é a correta
     },
+    {
+        enunciado: "Em 'É assim que acaba', com quem Lily fica no final da duologia?",
+        alternativas: ["Ryle", "Atlas"],
+        correta: 1 // A segunda alternativa é a correta
     }
-    let atual = 0;const caixaPrincipal = document.querySelector(".caixa-principal");
+];
+
+let atual = 0;
 let perguntaAtual;
 let pontuacao = 0; // Inicie a pontuação em 0
 
@@ -71,7 +59,7 @@ function verificaResposta(selecionada) {
     }
     atual++;
     if (atual < perguntas.length) {
-        mostrarPergunta();
+        mostraPergunta(); // Corrigido para chamar a função corretamente
     } else {
         mostrarResultado();
     }
@@ -91,12 +79,13 @@ function mostrarResultado() {
         caixaResultado.classList.remove('mostrar');
         caixaResultado.style.display = 'none';
         caixaPrincipal.style.display = 'block';
-        mostrarPergunta();
+        mostraPergunta();
     });
+
     caixaResultado.innerHTML = ''; // Limpa conteúdo anterior
     caixaResultado.appendChild(textoResultado);
     caixaResultado.appendChild(botaoReiniciar);
 }
 
 // Inicializa a primeira pergunta
-mostrarPergunta();
+mostraPergunta();
